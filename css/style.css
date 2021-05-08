@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    background: black;
+}
+
+.nav-link {
+    color: white !important;
+    text-transform: capitalize !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link:hover {
+    color: #ff8b38 !important;
+}
+
+.nav-item {
+    padding-left: 20px;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    opacity: 80%;
+    background: #262628;
+}
+
+/* *********************
+home banner home banner
+********************* */
+
+.home-banner {
+    background: url(../img/home-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.banner-content,
+.banner-form {
+    height: 95vh;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    position: relative;
+}
+
+.banner-content img {
+    width: 180px;
+}
+
+.banner-content h1 {
+    padding: 5% 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 37px;
+}
+
+.banner-content h1::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    background: white;
+    left: 0;
+    top: 52%;
+}
+
+.banner-content p {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    font-size: 14px;
+    padding: 3% 0;
+}
+
+.banner-content button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1% 4%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.banner-content button:hover {
+    background: #ff8b38;
+    border: 1px solid #ff8b38;
+    transition: .2s ease;
+}
+
+.banner-form form {
+    margin-left: 35%;
+    width: 100%;
+}
+
+.banner-form h2 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.banner-form h2 span {
+    color: #ff8b38;
+}
+
+.banner-form input {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    border-radius: 0px;
+    width: 360px;
+    padding: 10px 2%;
+    margin: 0 2%;
+    transition: none !important;
+}
+
+.submit-button {
+    background: #ff9b51 !important;
+    height: 60px;
+}
+
+.submit-button input {
+    border: none;
+    color: white;
+    padding: 0;
+    background: #ff9b51;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.submit-button input:hover {
+    transition: .2s ease;
+    color: #000;
+}
+
+/*******************
+social media starts
+*******************/
+
+.social-media {
+    height: 15vh;
+    border-bottom: 2px solid #a6a6a6;
+}
+
+.social-media-content {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    margin-top: 1%;
+}
+
+.social-media-content h1 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 3%;
+}
+
+.social-media-content p {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.social-media-icon {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.social-media-icon a {
+    font-size: 50px;
+    padding: 3%;
+}
+
+.social-media-icon i {
+    color: #cccccc;
+}
+
+.social-media-icon i:hover {
+    color: black;
+}
+
+/*****************************
+feature tab section starts
+******************************/
+
+.feature-section-wrapper {
+    height: 70vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.feature-tabs li {
+    list-style: none;
+    background: #86878b;
+    width: 100px;
+    height: 100px;
+    margin-top: 2px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #ff8b38 !important;
+}
+
+.feature-tabs li:nth-last-child(1) {
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 1px;
+}
+
+.feature-tabs li:nth-last-child(3) {
+    border-radius: 5px 5px 0 0;
+}
+
+.feature-tabs li:hover {
+    background: #ff8b38;
+}
+
+.feature-tab1-content h1 {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 5% 0;
+}
+
+.feature-tab1-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #ff8b38;
+    width: 80%;
+}
+
+.feature-tab1-content button {
+    text-transform: capitalize;
+    color: white;
+    background: #86878b;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.feature-tab1-content button:hover {
+    background: #ff8b38;
+}
+
+.feature-banner img {
+    margin-top: 12px;
+    width: 104%;
+}
+
+/*****************************
+sublist section starts
+******************************/
+.sublist-section{
+    padding:5% 0;
+}
+.sublist-slider .owl-carousel .owl-item img{
+    height:340px;
+}
+.sublist-section-wrapper,
+.standard-picture-section-wrapper {
+    height: auto;
+}
+
+.sublist-content {
+    position: relative;
+}
+
+.sublist-content h1 {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.sublist-content h1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #ff8b38;
+    top: 16%;
+    left: 0;
+}
+
+.sublist-content p {
+    font-size: 15px;
+    width: 90%;
+    margin: 7% 0;
+    margin-bottom: 20px;
+}
+
+.sub-title1 {
+    margin-bottom: 20px;
+}
+
+.title-icon {
+    margin-top: 6%;
+}
+
+.sub-title1 i {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff8b38;
+    border-radius: 50%;
+    padding: 8px 0px 0px 10px;
+    color: #ff8b38;
+}
+
+.sub-title1 h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.sub-title1 p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/*****************************
+sublist section End
+******************************/
+
+/*****************************
+standard picture section starts
+******************************/
+
+.standard-picture-section {
+    background: #ccccccc4;
+}
+
+.standard-picture-section-content {
+    position: relative;
+}
+
+.standard-picture-section-wrapper {
+    display: block;
+    padding: 5% 0;
+}
+
+.standard-picture-section-content h1 {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5% 0;
+}
+
+.standard-picture-section-content h1::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background: #ff8b38;
+    top: 28%;
+    left: 0;
+}
+
+.standard-picture-section-content p {
+    margin-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.standard-picture-section-slider .owl-carousel .owl-item img {
+    height: 340px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 5px 5px;
+    background: #716a6a;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff8b38;
+}
+
+.owl-theme .owl-dots {
+    position: absolute;
+    background: white;
+    width: 100%;
+    text-align: left;
+    top: 0;
+    margin-top: 0 !important;
+    height: 20px;
+}
+
+/*****************************
+standard picture section End
+******************************/
+
+/*****************************
+awesome section starts
+******************************/
+
+.awesome-section-wrapper {
+    height: 90vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.awesome-section-heading {
+    position: relative;
+    text-align: center;
+}
+
+.awesome-section-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.awesome-section-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    background: #ff8b38;
+    top: 44%;
+    left: 45%;
+}
+
+.awesome-section-heading p {
+    font-size: 15px;
+    padding: 4% 0;
+}
+
+.awesome-section-content-wrapper {
+    text-align: center;
+}
+
+.awesome-section-icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ff8b38;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.awesome-section-icon i {
+    font-size: 48px;
+    line-height: 70px;
+    color: #ff8b38;
+}
+
+.awesome-section-content-wrapper h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4% 0px;
+}
+
+.awesome-section-content-wrapper p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    width: 85%;
+    margin: auto;
+}
+
+/*****************************
+awesome section End
+******************************/
+
+/*****************************
+pricing-section starts
+******************************/
+
+.pricing-section {
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.pricing-section-wrapper {
+    height: 130vh;
+    padding: 7% 0;
+    overflow: hidden;
+}
+
+.pricing-section-heading {
+    position: relative;
+    text-align: center;
+}
+
+.pricing-section-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pricing-section-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    background: #ff8b38;
+    top: 50%;
+    left: 45%;
+}
+
+.pricing-section-heading p {
+    padding: 2% 0;
+    font-size: 13px;
+}
+
+.pricing-section-content {
+    text-align: center;
+}
+
+.price-card1 {
+    background: white;
+    margin-top: 10%;
+}
+
+.price-card1-wrapper {
+    padding-bottom: 20px;
+}
+
+.price-card-top {
+    background: #333333;
+    color: white;
+}
+
+.price-card-top-heading {
+    border-bottom: 2px solid white;
+}
+
+.price-card-top-heading p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    padding: 4% 0% 0% 0%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price-card-top-content {
+    border-bottom: 5px solid #ff8b38;
+}
+
+.price-card-top-content h1 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.price-card-top-content h1 span {
+    font-size: 60px;
+}
+
+.price-card-top-content p {
+    font-style: italic;
+    color: #ffffffb3;
+}
+
+.price-card-top-footer p {
+    background: #ff8b38;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 6px 0;
+}
+
+.price-card-bottom li {
+    list-style: none;
+    color: #86878b;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.price-card-bottom button {
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    background: #333333;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.price-table {
+    align-items: flex-end;
+}
+
+.price-card-bottom button:hover {
+    background: #ff8b38;
+}
+
+/*****************************
+pricing-section End
+******************************/
+
+/*****************************
+customer-review-section starts
+******************************/
+
+.customer-review-section {
+    background: #fff;
+}
+
+.customer-review-section-wrapper {
+    height: auto;
+    padding: 5% 0;
+}
+
+.customer-review-section-heading {
+    position: relative;
+    text-align: center;
+}
+
+.customer-review-section-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.customer-review-section-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    background: #ff8b38;
+    top: 50%;
+    left: 45%;
+}
+
+.customer {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.customer .col-md-4 {
+    width: 100%;
+}
+
+.customer .col-md-8 {
+    width: 100%;
+}
+
+.customer-review-content {
+    text-align: center;
+}
+
+.customer-review-content img {
+    width: 75px !important;
+    display: inline-block !important;
+}
+
+.customer-review-content .owl-theme .owl-dots {
+    text-align: center;
+    top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    left: 25%;
+}
+
+.msg-icon {
+    background: #dad5d5;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 44%;
+    bottom: -2%;
+    z-index: 0;
+}
+
+.customer-review-section-heading p {
+    padding: 2% 0;
+    font-size: 13px;
+}
+
+.customer-review-text p {
+    padding: 8% 10%;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Open Sans';
+    background: #dad5d5;
+    border-radius: 4px;
+    z-index: 99999;
+    position: relative;
+}
+
+.customer-review-text {
+    position: relative;
+    z-index: 99999;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.customer img {}
+
+.customer h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 9px;
+}
+
+.customer p {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+
+/*****************************
+customer-review-section End
+******************************/
+
+/************************************
+stylish-luxary-design-section starts
+*************************************/
+
+.stylish-luxary-design-section {
+    background: url(../img/last.png);
+    height: 50vh;
+    text-align: center;
+}
+
+.stylish-luxary-design-section-wrapper {
+    padding: 6%;
+}
+
+.stylish-luxary-design-section-heading {
+    position: relative;
+    text-align: center;
+}
+
+.stylish-luxary-design-section-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.stylish-luxary-design-section-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    background: #fff;
+    top: 50%;
+    left: 45%;
+}
+
+.stylish-luxary-design-section-heading p {
+    padding: 2% 0;
+    font-size: 14.9px;
+    color: white;
+}
+
+.stylish-luxary-design-section-button button {
+    padding: 8px 20px;
+    background: none;
+    color: white;
+    border: 2px solid #ff8b38;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.stylish-luxary-design-section-button button:hover {
+    background: #ff8b38;
+}
+
+/************************************
+stylish-luxary-design-section end
+*************************************/
+
+/************************************
+contact-us-section starts
+*************************************/
+
+.contact-us-section {
+    overflow: hidden;
+}
+
+.contact-us-section-wrapper {
+    height: 100vh;
+    padding: 6% 0px;
+}
+
+.contact-us-section-heading {
+    position: relative;
+    text-align: center;
+}
+
+.contact-us-section-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #212121;
+}
+
+.contact-us-section-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    background: #212121;
+    top: 50%;
+    left: 45%;
+}
+
+.contact-us-section-heading p {
+    padding: 2% 0;
+    font-size: 14.9px;
+    color: #212121;
+}
+
+.contact-us-section-form form {
+    padding: 5% 0;
+}
+
+.contact-form-left input {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width: 480px;
+    padding-top: 8%;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-message input {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width: 480px;
+    padding-top: 8%;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-form-submit {
+    text-align: center;
+    padding: 6%;
+}
+
+.contact-form-submit input {
+    padding: 8px 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    border: 2px solid #ff8b38;
+    border-radius: 3px;
+    background: none;
+}
+
+.contact-form-submit input:hover {
+    background: #ff8b38;
+}
+
+/************************************
+contact-us-section end
+*************************************/
+
+/************************************
+footer section starts
+*************************************/
+
+.footer-section {
+    background: black;
+}
+
+.footer-section-wrapper {
+    text-align: center;
+}
+
+.footer-section-wrapper p {
+    color: white;
+    padding: 7px 0px 20px 0px;
+}
+
+.footer-icon i {
+    padding: 10px;
+    font-size: 28px;
+    padding-top: 20px;
+    color: white;
+}
+
+.footer-icon i:hover {
+    color: #ff8b38;
+}
+
+/************************************
+footer section end
+*************************************/
